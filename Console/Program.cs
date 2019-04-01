@@ -85,10 +85,11 @@ namespace TravisCILab
         public static double Power(string x, string y)
         {
             double result = 1;
-
-            for (int i = 0; i < double.Parse(y); i++)
+            int i = 0;
+            while (i < double.Parse(y))
             {
                result = result * double.Parse(x);
+               i++;
             }
 
             return result;
