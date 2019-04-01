@@ -84,14 +84,12 @@ namespace TravisCILab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            int xNum = Int32.Parse(x);
-            int yNum = Int32.Parse(y);
-
-            int result = 1;
-
-            for (int i = 0; i < yNum; i++)
+            double result = 1;
+            int i = 0;
+            while (i < double.Parse(y))
             {
-               result = result * xNum;
+               result = result * double.Parse(x);
+               i++;
             }
 
             return result;
